@@ -1,4 +1,4 @@
-# 2024年1月 When we’ve reconquered our lost land,In triumph would return our army grand.
+# 2024年1月 待重头
 - 2024-01-11
   - 了解一种新的HDD技术SMR，可以降低成本10%左右，但可能需要上层研发新的引擎替换EXT4：[阿里](https://www.usenix.org/system/files/fast23-zhou-su.pdf)；[谷歌](https://blog.google/products/google-cloud/dynamic-hybrid-smr-ocp-proposal-improve-data-center-disk-drives/)；[DropBox](https://dropbox.tech/infrastructure/four-years-of-smr-storage-what-we-love-and-whats-next)
   - 了解[KubeBlocks](https://github.com/apecloud/kubeblocks) 作为有状态服务如数据库的K8S编排平台
