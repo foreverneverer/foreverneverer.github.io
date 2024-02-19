@@ -5,6 +5,7 @@
 - 2024-02-15 [Streamlit](https://github.com/streamlit/streamlit) — A faster way to build and share data apps
 - 2024-02-14 snowflake推出[SPI指标](https://www.snowflake.com/blog/measuring-performance-improvements-spi/)用于衡量过去客户稳定负载下的性能提升，同时维护[文档记录各项优化措施](https://docs.snowflake.com/en/release-notes/performance-improvements)
 - 2024-02-13 SelectDB发布[X2Doris](https://www.selectdb.com/blog/160)，加速数据迁移
+- 2024-02-12 数据库勿删恢复方案包括：基于快照的恢复和基于增量日志的恢复，PolarDB支持Query级别的日志恢复操作，命名为[SQL闪回](https://help.aliyun.com/zh/polardb/polardb-for-xscale/use-sql-flashback-1)
 
 # 2024年1月
 - 2024-01-26 [CXL技术可以解决内存池化的需求，数据中心利用CXL做解耦和池化，CXL技术能够让不同的资源从紧耦合变成松耦合，让相同的资源变成池化资源，会形成CPU资源池、GPU资源池以及内存资源池，各个资源池通过CXL连接。](https://www.elecfans.com/d/2210036.html)，CIDR2024展示了利用CXL集成数据库的一些探索：[Database Kernels: Seamless Integration of Database Systems and Fast Storage via CXL](https://www.cidrdb.org/cidr2024/papers/p43-lee.pdf)
