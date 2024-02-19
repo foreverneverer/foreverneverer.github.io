@@ -1,3 +1,5 @@
+# 2024年2月
+- 2024-02-18 clickhouse cloud已经支持了DistributedCacheService: [ClickHouse Cloud Update Call]( https://www.youtube.com/watch?v=Ew8vHeyyahI)
 # 2024年1月
 - 2024-01-26 [CXL技术可以解决内存池化的需求，数据中心利用CXL做解耦和池化，CXL技术能够让不同的资源从紧耦合变成松耦合，让相同的资源变成池化资源，会形成CPU资源池、GPU资源池以及内存资源池，各个资源池通过CXL连接。](https://www.elecfans.com/d/2210036.html)，CIDR2024展示了利用CXL集成数据库的一些探索：[Database Kernels: Seamless Integration of Database Systems and Fast Storage via CXL](https://www.cidrdb.org/cidr2024/papers/p43-lee.pdf)
 - 2024-01-25 [weakptr一般和sharedptr配合使用而不增加引用计数](https://blog.csdn.net/qq_38410730/article/details/105903979)：（1）解决循环引用的问题（2）使用lock()解决多线程中共享对象安全问题。
