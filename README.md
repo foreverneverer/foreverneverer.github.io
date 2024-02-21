@@ -1,4 +1,5 @@
 # 2024年2月
+- 2024-02-19 析构函数请确保不能有异常，以免资源释放被中断引起内存泄漏
 - 2024-02-18 clickhouse cloud已经支持了DistributedCacheService: [ClickHouse Cloud Update Call]( https://www.youtube.com/watch?v=Ew8vHeyyahI)
 - 2024-02-17 [PG生态新玩家ParadeDB](https://mp.weixin.qq.com/s/bx2dRxlrtLcM6AD2qsplQQ)
 - 2024-02-16 snowflake推出[marketplace](https://www.snowflake.com/en/data-cloud/marketplace/)用于提供数据和原生APP，如covid-19的流行病学数据可以免费获取
