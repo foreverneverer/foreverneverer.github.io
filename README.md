@@ -1,4 +1,5 @@
 # 2024年2月
+- 2024-02-20 [Doris支持Variant](https://cdn.selectdb.com/static/0409_Apache_Doris_Variant_a5ca19cdcc.pdf)，类似Bytehouse的隐式MAP列，实际为隐式JSON列，更为灵活
 - 2024-02-19 本地版CK一致性问题是由于数据的只能保证最终一致性：(1) 数据的变更只能等待后台合并才能一致 (2) 分布式表的数据写入是异步的。参见：[ClickHouse-数据一致性](https://www.cnblogs.com/EnzoDin/p/16251252.html)
 - 2024-02-19 析构函数请确保不能有异常，以免资源释放被中断引起内存泄漏
 - 2024-02-18 clickhouse cloud已经支持了DistributedCacheService: [ClickHouse Cloud Update Call]( https://www.youtube.com/watch?v=Ew8vHeyyahI)
