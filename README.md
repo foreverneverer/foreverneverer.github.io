@@ -1,4 +1,5 @@
 # 2024年2月
+- 2024-02-22 [Lion](https://arxiv.org/pdf/2403.11221)通过预先调整分区位置，使得分布式事务的分区尽量放置在同一节点避免分布式事务的影响
 - 2024-02-21 [hudi,iceberg,paimon比较](https://mp.weixin.qq.com/s/NIpud2kbiJJNOsje0Honyw), 很详细尤其是最后的对比
 - 2024-02-20 [Doris支持Variant](https://cdn.selectdb.com/static/0409_Apache_Doris_Variant_a5ca19cdcc.pdf)，类似Bytehouse的隐式MAP列，实际为隐式JSON列，更为灵活
 - 2024-02-19 本地版CK一致性问题是由于数据的只能保证最终一致性：(1) 数据的变更只能等待后台合并才能一致 (2) 分布式表的数据写入是异步的。参见：[ClickHouse-数据一致性](https://www.cnblogs.com/EnzoDin/p/16251252.html)
