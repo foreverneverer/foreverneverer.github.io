@@ -1,4 +1,5 @@
 # 2024年2月
+- 2024-02-24 SQL执行被分为编译型和向量化执行两种模式，使用融合模式可以加速数据读取：[Incremental Fusion: Unifying Compiled and Vectorized Query Execution](https://www.cs.cit.tum.de/fileadmin/w00cfj/dis/papers/inkfuse.pdf)
 - 2024-02-23 [SALI](https://arxiv.org/pdf/2308.15012?) 为了提高索引的性能和效率，业内引进了学习索引，通过学习模型来预测数据存储位置，进一步提高查找效率，[GITHUB](https://github.com/cds-ruc/SALI)
 - 2024-02-22 [Lion](https://arxiv.org/pdf/2403.11221)通过预先调整分区位置，使得分布式事务的分区尽量放置在同一节点避免分布式事务的影响
 - 2024-02-21 [hudi,iceberg,paimon比较](https://mp.weixin.qq.com/s/NIpud2kbiJJNOsje0Honyw), 很详细尤其是最后的对比
