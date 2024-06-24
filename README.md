@@ -1,4 +1,5 @@
 # 2024年2月
+- 2024-02-27 Rockset的核心不同点是能够构建全部的能够自动在任何数据（包括结构化、半结构化、地理和时间序列数据）上构建Converged Index™，并使用大量的空间持久化这些索引
 - 2024-02-26 谓词是返回 bool 型（或可隐式转换为 bool 型）的函数。一般来说，where 中的条件单元都是谓词：=, >, <, >=, <=, BETWEEN, LIKE, IS [NOT] NULL <>, IN, OR, NOT IN, NOT LIKE，谓词下推是指将查询语句中的过滤表达式尽可能下推到距离数据源最近的地方做计算，以尽早完成数据的过滤，进而显著地减少数据传输或计算的开销。下推前：`select count(1) from t1 A join t3 B on A.a = B.a where A.b > 100 and B.b > 100`; 下推后：`select count(1) from (select * from t1 where a>100) A join (select *  from t3 where b<100) B on A.a = B.a`; [MySQL生态现有计算下推方案汇总](https://dbkernel.com/2024/03/06/mysql-pushdown-summary/)
 - 2024-02-25 Clickhouse的索引主要包括稀疏索引(一级索引)，和跳数索引（二级索引），其中注意二级索引中的index_granularity和granularity区别，最常见的为minmax索引：[ClickHouse的索引深入了解](https://zhuanlan.zhihu.com/p/658631866)
 - 2024-02-24 SQL执行被分为编译型和向量化执行两种模式，使用融合模式可以加速数据读取：[Incremental Fusion: Unifying Compiled and Vectorized Query Execution](https://www.cs.cit.tum.de/fileadmin/w00cfj/dis/papers/inkfuse.pdf)
