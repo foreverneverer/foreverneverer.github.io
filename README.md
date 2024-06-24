@@ -1,4 +1,5 @@
 # 2024年2月
+- 2024-02-29 CBO基于成本的优化，可以理解动态预估查询开销，而RBO基于特定规则进行优化，不如前者灵活
 - 2024-02-28 计算下推包括：投影下推（Projection Pushdown）选择下推（Selection Pushdown）聚合下推（Aggregation Pushdown）排序下推（Sort Pushdown）连接下推（Join Pushdown）分布式数据洗牌下推（Distributed Data Shuffle Pushdown）选择位图下推（Selection Bitmap Pushdown）：[计算下推的分类](https://kimi.moonshot.cn/share/cpshtcf2337j30lspvvg)
 - 2024-02-27 Rockset的核心不同点是能够构建全部的能够自动在任何数据（包括结构化、半结构化、地理和时间序列数据）上构建Converged Index™，并使用大量的空间持久化这些索引
 - 2024-02-26 谓词是返回 bool 型（或可隐式转换为 bool 型）的函数。一般来说，where 中的条件单元都是谓词：=, >, <, >=, <=, BETWEEN, LIKE, IS [NOT] NULL <>, IN, OR, NOT IN, NOT LIKE，谓词下推是指将查询语句中的过滤表达式尽可能下推到距离数据源最近的地方做计算，以尽早完成数据的过滤，进而显著地减少数据传输或计算的开销。下推前：`select count(1) from t1 A join t3 B on A.a = B.a where A.b > 100 and B.b > 100`; 下推后：`select count(1) from (select * from t1 where a>100) A join (select *  from t3 where b<100) B on A.a = B.a`; [MySQL生态现有计算下推方案汇总](https://dbkernel.com/2024/03/06/mysql-pushdown-summary/)
