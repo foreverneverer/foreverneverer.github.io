@@ -1,4 +1,5 @@
 # 2024年2月
+- 2024-02-30 where和prewhere的区别是：前者作用在读取后数据结果集跳过CPU计算行，后者作用在数据源用于跳过IO读取行.但是前者往往利用索引加速查询，也可以跳过部分IO读取行
 - 2024-02-29 CBO基于成本的优化，可以理解动态预估查询开销，而RBO基于特定规则进行优化，不如前者灵活
 - 2024-02-28 计算下推包括：投影下推（Projection Pushdown）选择下推（Selection Pushdown）聚合下推（Aggregation Pushdown）排序下推（Sort Pushdown）连接下推（Join Pushdown）分布式数据洗牌下推（Distributed Data Shuffle Pushdown）选择位图下推（Selection Bitmap Pushdown）：[计算下推的分类](https://kimi.moonshot.cn/share/cpshtcf2337j30lspvvg)
 - 2024-02-27 Rockset的核心不同点是能够构建全部的能够自动在任何数据（包括结构化、半结构化、地理和时间序列数据）上构建Converged Index™，并使用大量的空间持久化这些索引
