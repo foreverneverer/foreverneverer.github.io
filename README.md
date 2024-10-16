@@ -1,5 +1,5 @@
 # 2024年3月
-- 2024-03-03 std::memory_order_relaxed 可以保证原子性，但是不保证顺序性，但是开销更小：[内存模型与c++中的memory_order](https://www.cnblogs.com/ishen/p/13200838.html)
+- 2024-03-03 std::memory_order_relaxed 可以保证原子性，但是不保证顺序性，但是开销更小； memory_order_relese写不能靠后， memory_order_acquire读不能靠后； memory_order_consume相关读不能靠后：[内存模型与c++中的memory_order](https://www.cnblogs.com/ishen/p/13200838.html)
 - 2024-03-02 Clickhouse通过对排序键优化能节省sort，distinct，group by的开销：[ClickHouse内幕技巧，In-order查询优化](https://mp.weixin.qq.com/s/ipN43yVT2hqpeQBc_F8q8Q)
 - 2024-03-01 where和prewhere的区别是：前者作用在读取后数据结果集跳过CPU计算行，后者作用在数据源用于跳过IO读取行.但是前者往往利用索引加速查询，也可以跳过部分IO读取行
   
