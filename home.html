@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paperily GPT</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antigravity-theme">
+    <!-- 背景粒子效果 -->
+    <div class="particle-container"></div>
+    
+    <!-- 顶部导航栏 -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <a href="#" class="nav-logo">Paperily</a>
+            <div class="nav-links">
+                <a href="#feature-analysis">深度分析</a>
+                <a href="#feature-discuss">全球研讨</a>
+                <a href="#feature-resource">资源共享</a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="https://chromewebstore.google.com/" target="_blank" id="navStoreBtn" class="download-pill-btn">
+                Download
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-brand">
+                <span class="brand-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </span>
+                Paperily
+            </div>
+            <h1 class="hero-title">
+                Experience Research<br>
+                <span class="text-highlight">evolution</span>
+            </h1>
+            <p class="hero-subtitle">
+                下一代 AI 论文科研助手<br>
+                深度分析 · 全球研讨 · 极速获取
+            </p>
+            <div class="hero-cta-group">
+                <a href="#" id="heroStoreBtn" class="btn-primary-large">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    插件商店下载
+                </a>
+                <button id="heroBaiduBtn" class="btn-secondary-large">百度网盘下载</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能介绍区域 1: 深度分析 -->
+    <section id="feature-analysis" class="feature-section">
+        <div class="feature-container">
+            <div class="feature-content">
+                <h2 class="feature-title">一键深度分析<br>论文精华</h2>
+                <p class="feature-desc">
+                    利用先进的大语言模型，自动提取核心观点、实验数据与创新结论。
+                    不再被冗长的篇幅困扰，通过结构化摘要直击研究本质，提升阅读效率 10 倍以上。
+                </p>
+                <div class="feature-tags">
+                    <span>#智能摘要</span>
+                    <span>#结构化解析</span>
+                    <span>#核心提炼</span>
+                </div>
+            </div>
+            <div class="feature-visual">
+                <div class="visual-card card-analysis">
+                    <div class="card-header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="skeleton-line w-75"></div>
+                        <div class="skeleton-line w-50"></div>
+                        <div class="skeleton-block">
+                            <div class="analysis-highlight">
+                                <div class="highlight-icon">✨</div>
+                                <div class="highlight-text">Core Innovation: Transformer-based attention mechanism...</div>
+                            </div>
+                        </div>
+                        <div class="skeleton-line w-90"></div>
+                        <div class="skeleton-line w-60"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能介绍区域 2: 全球研讨 -->
+    <section id="feature-discuss" class="feature-section reverse">
+        <div class="feature-container">
+            <div class="feature-content">
+                <h2 class="feature-title">与全球科研工作者<br>在线讨论创新</h2>
+                <p class="feature-desc">
+                    打破学术壁垒，实时连接全球智慧。在论文页面直接发起讨论,
+                    与来自 MIT、Stanford 等高校的研究者交换观点，激发灵感火花，共创学术价值。
+                </p>
+                <div class="feature-tags">
+                    <span>#实时互动</span>
+                    <span>#全球视野</span>
+                    <span>#思维碰撞</span>
+                </div>
+            </div>
+            <div class="feature-visual">
+                <div class="visual-card card-discuss">
+                    <div class="chat-bubble left">
+                        <div class="avatar">A</div>
+                        <div class="bubble-content">What do you think about the ablation study in Table 3?</div>
+                    </div>
+                    <div class="chat-bubble right">
+                        <div class="avatar">Me</div>
+                        <div class="bubble-content">It clearly demonstrates the effectiveness of the module! 🚀</div>
+                    </div>
+                    <div class="chat-bubble left">
+                        <div class="avatar">B</div>
+                        <div class="bubble-content">Agreed. The performance gain is significant.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能介绍区域 3: 资源共享 -->
+    <section id="feature-resource" class="feature-section">
+        <div class="feature-container">
+            <div class="feature-content">
+                <h2 class="feature-title">共享资源库<br>助力原文极速获取</h2>
+                <p class="feature-desc">
+                    告别付费墙与繁琐的下载流程。依托社区强大的共享网络,
+                    海量学术资源一键直达，自动匹配最佳下载源，构建您的专属科研知识库。
+                </p>
+                <div class="feature-tags">
+                    <span>#极速下载</span>
+                    <span>#开放获取</span>
+                    <span>#知识共享</span>
+                </div>
+            </div>
+            <div class="feature-visual">
+                <div class="visual-card card-resource">
+                    <div class="resource-item">
+                        <div class="file-icon">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">Attention Is All You Need.pdf</div>
+                            <div class="file-meta">2.5MB · ArXiv · 100% Match</div>
+                        </div>
+                        <div class="download-icon">↓</div>
+                    </div>
+                    <div class="resource-item">
+                        <div class="file-icon">PDF</div>
+                        <div class="file-info">
+                            <div class="file-name">BERT: Pre-training of Deep...pdf</div>
+                            <div class="file-meta">3.1MB · Google · 98% Match</div>
+                        </div>
+                        <div class="download-icon">↓</div>
+                    </div>
+                    <div class="upload-status">
+                        <div class="progress-bar"><div class="progress-fill"></div></div>
+                        <div class="status-text">Accelerating download...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="simple-footer">
+        <div class="footer-content">
+            <div class="footer-logo">Paperily</div>
+            <div class="footer-links">
+                <a href="/privacy">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-copyright">© 2026 Paperily Team. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <!-- 百度网盘下载弹窗 -->
+    <div id="baiduModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="baiduModalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            
+            <div class="modal-header-center">
+                <div class="modal-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                    </svg>
+                </div>
+                <h3 class="modal-title">Paperily GPT 下载</h3>
+            </div>
+            
+            <div class="modal-body">
+                <div class="download-section">
+                    <p class="download-tip">支持 Chrome、Edge 浏览器安装</p>
+                    <a href="https://pan.baidu.com/s/1E4VkfiAE1yeo12tMpzqI9Q?pwd=qsid" target="_blank" class="btn-baidu-download">
+                        前往百度网盘下载
+                    </a>
+                </div>
+
+                <div class="modal-divider">
+                    <span>ZIP 安装教程</span>
+                </div>
+
+                <div class="tutorial-list">
+                    <div class="tutorial-item">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <h4>下载并解压</h4>
+                            <p>下载压缩包后，请务必<strong>解压</strong>到本地文件夹。</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-item">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <h4>打开扩展程序</h4>
+                            <p>在 Chrome 地址栏输入 <code class="code-snippet">chrome://extensions</code> 并回车。</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-item">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <h4>开启开发者模式</h4>
+                            <p>打开右上角的 <strong>"开发者模式"</strong> 开关。</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-item">
+                        <div class="step-num">4</div>
+                        <div class="step-content">
+                            <h4>加载扩展</h4>
+                            <p>点击 <strong>"加载已解压的扩展程序"</strong>，选择解压后的文件夹。</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-item">
+                        <div class="step-num">5</div>
+                        <div class="step-content">
+                            <h4>使用扩展</h4>
+                            <p>安装好后，打开任意一个在线PDF文档即可在右下角看到AI入口。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 插件商店下载弹窗 -->
+    <div id="storeModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="storeModalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            
+            <div class="modal-header-center">
+                <div class="modal-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                    </svg>
+                </div>
+                <h3 class="modal-title">Paperily GPT 下载</h3>
+            </div>
+            
+            <div class="modal-body">
+                <div class="download-section">
+                    <p class="download-tip">支持 Chrome、Edge 浏览器安装</p>
+                    <a href="https://chromewebstore.google.com/" target="_blank" class="btn-baidu-download">
+                        前往 Chrome 应用商店下载
+                    </a>
+                </div>
+                
+                <div class="modal-divider">
+                    <span>使用教程</span>
+                </div>
+                
+                <div class="tutorial-list">
+                    <div class="tutorial-item">
+                        <div class="step-num">1</div>
+                        <div class="step-content">
+                            <h4>点击安装</h4>
+                            <p>在 Chrome 应用商店页面点击<strong>"添加至 Chrome"</strong>按钮。</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-item">
+                        <div class="step-num">2</div>
+                        <div class="step-content">
+                            <h4>确认安装</h4>
+                            <p>在弹出的确认对话框中点击<strong>"添加扩展程序"</strong>。</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-item">
+                        <div class="step-num">3</div>
+                        <div class="step-content">
+                            <h4>完成安装</h4>
+                            <p>等待几秒钟，扩展程序将自动安装完成。</p>
+                        </div>
+                    </div>
+                    <div class="tutorial-item">
+                        <div class="step-num">4</div>
+                        <div class="step-content">
+                            <h4>使用扩展</h4>
+                            <p>安装好后，打开任意一个在线PDF文档即可在右下角看到AI入口。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (() => {
+            // 配置项：是否开放商店下载
+            const IS_STORE_OPEN = false;
+            const STORE_CLOSED_MSG = '插件商店下载暂未开放，请从百度网盘下载';
+
+            const setupModal = (modalId, openBtnId, closeBtnId, checkFn = null) => {
+                const overlay = document.getElementById(modalId);
+                const openBtn = document.getElementById(openBtnId);
+                const closeBtn = document.getElementById(closeBtnId);
+
+                if (!overlay || !openBtn || !closeBtn) return () => {};
+
+                const open = (e) => {
+                    if (e) e.preventDefault();
+                    
+                    if (checkFn && !checkFn()) {
+                        return;
+                    }
+
+                    overlay.classList.add('show');
+                    document.body.style.overflow = 'hidden';
+                };
+
+                const close = () => {
+                    overlay.classList.remove('show');
+                    document.body.style.overflow = '';
+                };
+
+                openBtn.addEventListener('click', open);
+                closeBtn.addEventListener('click', close);
+                
+                overlay.addEventListener('click', (e) => {
+                    if (e.target === overlay) close();
+                });
+                
+                return close;
+            };
+
+            const closeBaidu = setupModal('baiduModal', 'heroBaiduBtn', 'baiduModalClose');
+            
+            const closeStore = setupModal('storeModal', 'heroStoreBtn', 'storeModalClose', () => {
+                if (!IS_STORE_OPEN) {
+                    alert(STORE_CLOSED_MSG);
+                    return false;
+                }
+                return true;
+            });
+
+            // 顶部导航栏下载按钮逻辑
+            const navStoreBtn = document.getElementById('navStoreBtn');
+            if (navStoreBtn) {
+                navStoreBtn.addEventListener('click', (e) => {
+                    if (!IS_STORE_OPEN) {
+                        e.preventDefault();
+                        alert(STORE_CLOSED_MSG);
+                    }
+                });
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeBaidu();
+                    closeStore();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
